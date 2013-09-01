@@ -1,0 +1,102 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$font-family-base: Georgia, "Times New Roman", Times, serif !default;
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:             720px !default;
+
+// Medium screen / desktop
+$container-desktop:            940px !default;
+
+// Large screen / wide desktop
+$container-lg-desktop:         1000px !default;
+
+
+@import 'sass-bootstrap/lib/bootstrap';
+@import '/bower_components/animated-responsive-image-grid/css/style.css';
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y : scroll;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.ri-grid {
+    margin: 0;
+    z-index: 100;
+}
+
+.jumbotron {
+    padding: 0;
+    height: 336px;
+}
+
+#map {
+    position: fixed;
+    top: 0;
+    width:100%;
+    height:350px;
+    z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}

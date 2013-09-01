@@ -1,0 +1,14 @@
+{
+  "name": "year",
+  "version": "0.0.0",
+  "dependencies": {
+    "sass-bootstrap": "~3.0.0",
+    "requirejs": "~2.1.8",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "animated-responsive-image-grid": "*",
+    "jquery-waypoints": "~2.0.3",
+    "coffee-script": "~1.6.3"
+  },
+  "devDependencies": {}
+}
