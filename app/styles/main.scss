@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 $font-family-base: Georgia, "Times New Roman", Times, serif !default;
+// $font-family-base: 'Open Sans', sans-serif !default;
+$font-size-base:          15px !default;
 
 // Container sizes
 // --------------------------------------------------
@@ -16,27 +18,57 @@ $container-lg-desktop:         1000px !default;
 
 @import 'sass-bootstrap/lib/bootstrap';
 @import '/bower_components/animated-responsive-image-grid/css/style.css';
+// @import 'bootstrap.css';
 
+html, body {
+    height: 100%;
+}
 
 body {
-    padding-top: 50px;
+    // padding-top: 50px;
     padding-bottom: 20px;
     overflow-x: hidden;
     overflow-y : scroll;
 }
 
+section {
+    margin-bottom: 100px;
+    position: relative;
+}
+
 .navbar {
     margin: 0;
+    box-shadow: 0px 2px 4px -3px black;
+    opacity: .9;
+    font-family: 'Amatic SC';
+    font-size: 26px;
+    font-weight: 700;
+    -webkit-transition:-webkit-filter 0.5s ease-in-out;
+}
+.blur {
+    -webkit-filter: blur(10px);
 }
 
 .ri-grid {
     margin: 0;
     z-index: 100;
+    width: 200%;
+    position: absolute;
+}
+#ri-grid {
+    top: 0;
+}
+#ri-grid1 {
+    top: 112px;
+}
+#ri-grid2 {
+    top: 224px;
 }
 
 .jumbotron {
     padding: 0;
-    height: 336px;
+    background-color: white;
+    // height: 112px;
 }
 
 #map {
@@ -47,56 +79,44 @@ body {
     z-index: 50;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+#intro {
+    height: 100%;
+    background-image: url('http://192.168.2.27:9000/images/full-04.jpg');
+    background-size: cover;
+    margin: 0;
+    box-shadow: inset 0px -9px 10px -10px #000;
 }
 
-/* Space out content a bit */
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+#intro img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
 }
 
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
+#intro h1 {
+    color: white;
+    position: relative;
+    z-index: 1000;
+    margin: 0;
+    padding-top: 10%;
+    font-family: 'Amatic SC';
+    font-size: 140px;
+    text-shadow: 0px 0px 2px #000;
 }
 
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+#begins {
+    z-index: 1000;
+    background-color: #FFF;
+    border-radius: 3px;
+    // box-shadow: 0 0 10px -2px #000;
+    margin-top: 20px;
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+.shadow {
+    box-shadow: 0px 0px 10px 2px #000;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+.lead {
+    font-family: 'Open Sans', sans-serif;
 }

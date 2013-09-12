@@ -16,15 +16,17 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
 
         <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
         <!--[if lte IE 8]>
             <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' />
         <![endif]-->
         <script src='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+
     </head>
     <body>
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -33,25 +35,26 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">One Year</a>
+            <!-- <a class="navbar-brand" href="#">One Year</a> -->
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
               <li><a href="#" data-scroll="begins">It Begins</a></li>
-              <li><a href="#" data-scroll="tminus">T-Minus</a></li>
-              <li><a href="#" data-scroll="quit"><span class="glyphicon glyphicon-off"></span></a></li>
-              <li><a href="#" data-scroll="around-home">Around Home</a></li>
+              <li><a href="#" data-scroll="quit">The Quitting</a></li>
+              <li><a href="#" data-scroll="around-home">The Escape</a></li>
               <li><a href="#" data-scroll="central-america">Central America</a></li>
-              <li><a href="#" data-scroll="road-trip">Road Trip</a></li>
+              <li><a href="#" data-scroll="road-trip">Back North</a></li>
               <li><a href="#" data-scroll="beyond">Beyond</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </nav>
 
-        <div class="jumbotron">
-            <div id="ri-grid" class="ri-grid ri-grid-size-2">
+        <section id="intro" class="jumbotron">
+          <!-- <img class="full-img" src="images/full-02.jpg"> -->
+          <h1 class="text-center">One Year</h1>
+            <!-- <div id="ri-grid" class="ri-grid ri-grid-size-2">
                 <ul>
                     <li><a href="#"><img src="images/thumbs/1.jpg"/></a></li>
                     <li><a href="#"><img src="images/thumbs/2.jpg"/></a></li>
@@ -102,68 +105,92 @@
                     <li><a href="#"><img src="images/thumbs/47.jpg"/></a></li>
                     <li><a href="#"><img src="images/thumbs/48.jpg"/></a></li>
                 </ul>
-            </div>
-        </div>
+            </div> -->
+        </section>
 
-        <div class="container">
-            <div id='map' class='container'></div>
-            <section id="begins" data-anchor="begins" class="">
-                <div class="page-header">
-                  <h1>It Begins</h1>
-                  <p class="lead">The beginning of this process is something I lost track of before I ever knew it existed</p>
-                  <div class="row">
-                      <div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
-                      <div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
-                      <!-- Optional: clear the XS cols if their content doesn't match in height -->
-                      <div class="clearfix visible-xs"></div>
-                      <div class="col-xs-6 col-sm-4 col-md-4">.col-xs-6 .col-sm-4 .col-md-4</div>
+        <!-- <section class="container"> -->
+            <!-- <div id='map' class='container'></div> -->
+
+
+            <section id="begins" data-anchor="begins" class="container">
+                <div class="row">
+                    <p class="lead col-md-12">It has been one year since I made a rather rash decision: I'm going to quit my job. Little more than a week of serious thought went into this decision,  never giving doubt a chance to cross my mind. Now, <em>one year later</em>, I see growth in myself I hadn't imagined possible. From the beginning of this journey to where I stand today, I never for a moment regretted my impulse decision.</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <p>I say "beginning" meaning my day of resignation from work. But who am I kidding, that was never the beginning. Looking back I can spotlight a few other events that may have marked the true beginning. How about a small solo road trip I took around Kansas that allowed me time to ponder the possibility? Maybe before that - the months prior in which I burned as much vacation time as was reasonable to make every weekend a long one? While I most credit the solo road trip as the catalyst of my decision, I can’t help thinking the adventure-filled summer played a critical role - it gave me a taste of what the other side of the window was like.</p>
+                        <p>These long weekends - I recall counting eleven in a row at one point - were spent chasing rocks and roads. Most were used to abseil my way through the desert southwest in what's known as canyoneering. Others were used for climbing trips. Yet others used to plant my butt squarely on a piece of moving leather for hours on end, cycling the open desert highways. California, Nevada, Arizona, Utah. I called all of them home for a few days at a time. Every weekend punctuated with a drive back home to Las Vegas and a return to the office. Perhaps these weeks at work were not the most productive on record. There is no doubt a great deal of planning, of weekends, that is, found it's way into my daily work routine.</p>
+                        <p>As summer wound to an end - or was still in full effect, if you're a Las Vegas - I needed to take a trip of a different kind. My grandfather would be celebrating his 80th birthday and I would be making the trip back to Kansas to attend the festivities. Hugoton, Kansas, my hometown, is not the easiest place to find on a map. From Las Vegas, it is 15 hours by car or about half that by plane(s). I chose the latter.</p>
+                        <p>Given the distance and cost of the transit, I decided to lengthen the trip a little more than usual. A full, rounded week. Too much time to spend in small farmville Kansas, but more time to spend with family, I thought. Then, upon arrival, a new idea sparked: lets take my parents' car and treat myself to a little road trip. I'd left a trail of old friends scattered across Kansas during my former lives, some of which I hadn't seen over five years. I'd made far too many empty promises of visitation ever since my moving on. It was time to make up for lost time.</p>
+                        <p>Kansas is a rather wide state, roughly 400 miles across. To follow my planned route, I would have to drive the majority of those miles, just to get started. The first leg went as planned: uneventful but happy times. Most of the friends I'd planned on seeing were not even aware of my impending arrival. Apparently I don't like to plan too much. Or at all.</p>
+                        <p>Five hours of open Kansas highway later, I arrived in Emporia, my old university town. Priority number one was a friend who I still keep in constant contact with today, Brian. He's the guy that once said something along the lines of "you should learn to write code, it would make your life so much easier." But he was at work for a couple more hours. New plan to kill the afternoon: go track down a once crush turned great friend (yeah yeah) who I had mostly lost contact with for a number of years, Melony.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <p>I found her right where I guessed, which so happens to be where Facebook said she worked. These sort of meetings, in my opinion, tend to be a little awkward at first. That faded quickly and I was right back to how it felt knowing her years ago (the friend part, not the crush part. Maybe.) Beers drank. Darts played. Sunsets watched across the rolling Flint Hills. Reconnection number one: success.</p>
+                        <p>My only night in Emporia was spent on the couch of Brian's and family. As I mentioned, we hadn't fell out of contact over the years. We both maintained the type of desk jobs that required hours of focus interspersed with moments of zoning out. This is when we'd shotgun messages at each other online. The hot new programming framework. The new bicycle frame company. The new-old amplifier tube. We knew what each other was up to, but it was still great to toast beers in his garden. Reconnection number two: success.</p>
+                        <p>Two days and I'd caught up with two old friends. Now I had something to think about during those remaining miles I would be driving. In part, my thoughts were how great it was to make these reconnections, but I couldn't keep another idea from creeping in: why do I focus most of my life on sitting at a desk by myself when I could be making these connections far more frequently. Or better yet, focusing on the people in my life every day and not having to scramble years later to play a game of catch up shrouded with the feeling that after you catch up, it'll be time to disconnect again. Normal seems stupid.</p>
+                        <p>Kansas City would be another great stop on my trip. I'd get a chance to reconnect with two of the loveliest friends you could ask for: Jocelyn, a close friend all through High School who accompanied me a few times out to the solitary hill in the area to take lightning photos. And Christina, a friend from university who called my couch and floor home on a semi-regular basis. What else could you expect her to do on a freezing winter night after a late night of hot cocoa and movies? Two more days, two more reconnections. Success.</p>
+                        <p>My final stop was a quick one during my trek back west across the state: Abilene. Here I would find Courtney, my indescribably great long distance friend from high school. Throw a realized sophomore year promise of "if we don't have prom dates our senior year, lets go together" on top and you may see a hint of why I'd want to pull off in a dusty Kansas town if only for a couple hours. This small reconnection would eventually lead to another part of this year-long story - a part about a wedding. More on that later. Although brief, reconnection number five: success.</p>
+                        <p>Now back west to where I've statistically called home the longest - another long drive, however this one mostly at night. Nights are always my best thinking times. Mornings are too foggy. Afternoons are too productive. Nights are a good mix of lazy but mentally active - a good combination for thought. Again, that mischievous thought returned: why do the greatest things in my life, the people, seem to have the lowest priority?</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <p>After returning to my parents', my originally scheduled program was resumed. Family was seen. Food was cooked. Festivities were celebrated. Back to Vegas (baby)!</p>
+                        <p>Upon returning to Las Vegas, my concern over life priorities began to morph. "Okay, so what everyone considers the norm is flawed. Can I live differently? What would I have to do?" Timing seemed perfect for a small life reset: no debts, no long term obligations, no one whose life I will be affecting. The big fat elephant in my life was my job. It's awfully tough to break out of a routine if 40 hours of your week are exactly that, a strict routine. If I killed this routine, I'd be okay for awhile, right? I had savings and if I were to rid myself of a home, I would hardly have to spend any money to squeak by. But can you just quit jobs for what you instinctively want to call, no reason? This theory needed tested.</p>
+                        <p>The first week back in Vegas saw a real increase in the seriousness of this thought. It was gaining momentum. The next weekend, I made a trip to Big Bear, California. Another coal on the fire, they say. Now we're on to the second week. If I'm going to do this, when? Should I wait until the end of my apartment lease? That would be one wise option. No, I'd most certainly talk myself out of it or lose interest in going against the grain. Ok, so when? I'm only burning time. How about Friday? Okay, Friday.</p>
+                        <p>This week passed with an air of mild certainty. I will for sure quit my job, and maybe do it Friday. Friday neared and once again, plans were made. This time for my buddy Jeremy and I to take bicycles to San Diego, visit my friend Katie, drink beers and generally have a good old fashioned San Diego weekend. Okay so maybe Friday was a rash idea. I know I want to do this, but maybe I don't need to in order to change my life. Lets use this weekend to think on it. I'll also get to talk about the idea with Katie. She's smart, I trust her judgement. Okay so Monday. Definitely Monday, unless I talk myself out of it.</p>
+                        <p>Nobody seemed to talk me out of it. Here I thought I was pulling a societal faux pas and no one was proposing sanity.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="quit" data-anchor="quit" class="container">
+              <h1>The Quitting</h1>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                        <p>Monday arrived. <em>The</em> Monday after <em>the</em> Friday. How do you type up a letter of resignation, anyways? I typed one up back in 2008 when I left The Washington Post, but I couldn't find it. My friend, Kevin, had resigned from a job a couple years back, maybe he could give me tips. Perfect, a copy of his letter. A quick change of name, date, a few details and I was ready to print.</p>
+                        <p>That printer is a long ways away from my desk. Okay lets plan this out. I push print and hustle over to collect my sheet. If anyone else joins me in the queue, I'll play ignorant and grab all the papers, shuffle them around to pull mine out and make a return to my desk. The plan was not needed. I fetched my golden ticket, folded it up and returned to my seat to practice breathing. It's still Monday. Okay, one step remains.</p>
+                        <p>Shit, Tim is in Doug's office. I guess I’ll wait.</p>
+                        <p>Christ, what are they talking about? Hustle it along already!</p>
+                        <p>“Hey, you got a minute?” I say as I usually do. Only this time punctuated with the closing of the office door and an obvious sheet of paper in my hand, folded in a manner that obscured its contents.</p>
+                        <p>“Uh oh, what’s that?”</p>
+                        <p>“Yeahhh.”</p>
+                        <p>I had a good story. A true, good story. My resignation was not out of resentment. It was simply “time for a break”. He bought it. So did everyone else, it seemed. The explanation of a my needing to take advantage of the time I have without debts or any real obligations appeared to ring true to all who listened. Instead of bitter acceptance or offers to stay, I received overwhelming praise and jealousy and warm offers to return if and when I finish my... journey. This was turning out to be much easier than expected. I thought I was going against the grain. What gives?</p>
                   </div>
-                </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                        <p>Now another thought hit me. What should I do after I'm finished with work? This thought would haunt me for months. More on that, later.</p>
+                        <p>Time to wrap everything up and somehow get out of here. Obviously I will have to spread the news around the office and among friends. Friends would be the easy part. I will tell them when I see them. The rest will just find out through the grapevine. But what about my non-close colleagues? They needed to know, too, right? I certainly won't send out an email to announce my news. That feel too spotlighted, especially when my story would be - “Hey I’m quitting my job to go ride a bike or something!” I'll figure it out later.</p>
+                        <p>One weeks passed and I'd yet to tell anyone outside of my closest work friends. I really ought to let everyone know, but still wasn’t sure how.</p>
+                      <blockquote>
+                        <p>"Stoops is headed off into the sunset on a pair of skinny tires with as much as a carbon bike will hold (not much...he's not even bringing pants). Please join us for an evening of food and bike filled fun."</p>
+                        <small>Tyson Anderson breaking the news on <cite title="Facebook"><a href="https://www.facebook.com/events/526907613991991/">Facebook</a></cite></small>
+                      </blockquote>
+                      <p>As it turned out, I didn’t have to do anything! As a gesture of what I can only assume was generosity, my friend Tyson set up a big Facebook event slash BBQ in the park and invited who he thought knew about my news. He misjudged a bit, some didn't know yet, but that was fine. As I made haste explaining to them my situation, I made a comment on the primary Facebook event post. A couple messages popped up asking about my news. Huh, they weren't in the event, how'd they know? Turns out my comment ended up on my public timeline for everyone to see. Dammit. Scrambling doesn’t even begin to describe this cat and bag situation. Looks like I won’t be getting any work done today!</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-4">
+                      <p>Lets face it, the only work I really accomplished that week was passing off my work knowledge and duties to those who needed it. That, and researching what was to be my first post-job adventure: a bike tour. A grand cross-country bike tour sounded appealing, but perhaps I should test out the concept with a little trip around southwestern Utah. I had plenty to research with even this week-long endeavor.</p>
+                      <p>The week rolled to its end. I, still, only received accolades far beyond my expectations. People would always ask for an explanation of my plans. I was quitting my job, I must have a reason. Of course I did, but it was far too esoteric to explain a dozen times a day. My short answer? Just going to go ride a bike for awhile. This was about the only plan I’d thought up, though I didn’t know if it was actually one I wanted to do long term. But it provided a simple answer, allowing me to move on. Quitting my job to ride a bike. It sounded good, too - it made me feel adventurous! The five years I spent at the Las Vegas Sun came to an end with an awkward moment in the spotlight and a clear aura of confusion as to what the hell I was doing. Cake made it all better. And so did the gifts I received from my colleagues: a piece of homeless-looking cardboard signed by my friends, an obnoxious bicycle horn, tassels and a card I was made to promise to keep with me at all times during my travels. “All who wander are not lost - Homeless road trip 2012”</p>
+                  </div>
+              </div>
             </section>
-            <section id="tminus" data-anchor="tminus" class="">
-                <div class="page-header">
-                  <h1>T-Minus ...</h1>
-                    <p class="lead">"You can't quit your job, that's absurd!" That's the reaction I would have expected from more people upon hearing my grand plan.</p>
-                </div>
+            <section id="around-home" data-anchor="around-home" class="container">
+                <h1>The Escape</h1>
+                <p class="lead"></p>
             </section>
-            <section id="quit" data-anchor="quit" class="">
-                <div class="page-header">
-                  <h1>The Quitting</h1>
-                  <blockquote>
-                    <p>"Stoops is headed off into the sunset on a pair of skinny tires with as much as a carbon bike will hold (not much...he's not even bringing pants). Please join us for an evening of food and bike filled fun."</p>
-                      
-                  </blockquote>
-                </div>
+            <section id="central-america" data-anchor="central-america" class="container">
+                <h1>Central America</h1>
+                <h2>Costa Rica</h2>
+                <h2>Panama</h2>
+                <h2>Costa Rica (again)</h2>
+                <h2>Nicaragua</h2>
+                <h2>Guatemala</h2>
+                <h2>Belize?</h2>
+                <h2>Mexico!</h2>
             </section>
-            <section id="around-home" data-anchor="around-home" class="">
-                <div class="page-header">
-                  <h1>The Escape</h1>
-                </div>
-                <p class="lead">"The dream" turned out to be a far different monster than I had anticipated. </p>
+            <section id="road-trip" data-anchor="road-trip" class="container">
+                <h1>Back North</h1>
             </section>
-            <section id="central-america" data-anchor="central-america" class="">
-                <div class="page-header">
-                  <h1>Central America</h1>
-                  <h2>Costa Rica</h2>
-                  <h2>Panama</h2>
-                  <h2>Costa Rica (again)</h2>
-                  <h2>Nicaragua</h2>
-                  <h2>Guatemala</h2>
-                  <h2>Belize?</h2>
-                  <h2>Mexico!</h2>
-                </div>
+            <section id="beyond" data-anchor="beyond" class="container">
+                <h1>Beyond</h1>
             </section>
-            <section id="road-trip" data-anchor="road-trip" class="">
-                <div class="page-header">
-                  <h1>Road Trip</h1>
-                </div>
-            </section>
-            <section id="beyond" data-anchor="beyond" class="">
-                <div class="page-header">
-                  <h1>Beyond</h1>
-                </div>
-            </section>
-        </div>
 
 
 

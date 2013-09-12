@@ -13,7 +13,10 @@ require.config({
         bootstrapTransition: '../bower_components/sass-bootstrap/js/transition',
         'jquery-waypoints': '../bower_components/jquery-waypoints/waypoints',
         'sass-bootstrap': '../bower_components/sass-bootstrap/dist/js/bootstrap',
-        gridrotator: '../bower_components/animated-responsive-image-grid/js/jquery.gridrotator'
+        gridrotator: '../bower_components/animated-responsive-image-grid/js/jquery.gridrotator',
+        'animated-responsive-image-grid': '../bower_components/animated-responsive-image-grid/js/jquery.gridrotator',
+        requirejs: '../bower_components/requirejs/require',
+        skrollr: '../bower_components/skrollr/dist/skrollr.min'
     },
     shim: {
         bootstrapAffix: {
@@ -66,6 +69,11 @@ require.config({
                 'jquery'
             ]
         },
+        'jquery-waypoints': {
+            deps: [
+                'jquery'
+            ]
+        },
         gridrotator: {
             deps: [
                 'jquery'
@@ -74,27 +82,61 @@ require.config({
     }
 });
 var map;
-require(['app', 'jquery', 'hello', 'gridrotator'], function (app, $) {
+require(['app', 'jquery', 'gridrotator', 'jquery-waypoints', 'skrollr'], function (app, $) {
     'use strict';
     
+    // var s = skrollr.init();
+
     $(function() {
 
-        $( '#ri-grid' ).gridrotator( {
-            rows        : 3,
-            columns     : 12,
-            animType    : 'fadeInOut',
-            animSpeed   : 1000,
-            interval    : 999999,
-            step        : 1,
-            w320        : {
-                rows    : 3,
-                columns : 4
-            },
-            w240        : {
-                rows    : 3,
-                columns : 4
-            }
-        } );
+        // $( '#ri-grid' ).gridrotator( {
+        //     rows        : 1,
+        //     columns     : 24,
+        //     animType    : 'fadeInOut',
+        //     animSpeed   : 1000,
+        //     interval    : 200000000,
+        //     step        : 1,
+        //     w320        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     },
+        //     w240        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     }
+        // } );
+        // $( '#ri-grid1' ).gridrotator( {
+        //     rows        : 1,
+        //     columns     : 24,
+        //     animType    : 'fadeInOut',
+        //     animSpeed   : 1000,
+        //     interval    : 200000000,
+        //     step        : 1,
+        //     w320        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     },
+        //     w240        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     }
+        // } );
+        // $( '#ri-grid2' ).gridrotator( {
+        //     rows        : 1,
+        //     columns     : 24,
+        //     animType    : 'fadeInOut',
+        //     animSpeed   : 1000,
+        //     interval    : 200000000,
+        //     step        : 1,
+        //     w320        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     },
+        //     w240        : {
+        //         rows    : 3,
+        //         columns : 4
+        //     }
+        // } );
     });
 
     // map = L.mapbox.map('map', 'brutimus.map-vans9xbz')
@@ -103,7 +145,7 @@ require(['app', 'jquery', 'hello', 'gridrotator'], function (app, $) {
     $('nav a').on('click', function() {
 
         var scrollAnchor = $(this).attr('data-scroll'),
-            scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+            scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 80;
 
         $('body,html').animate({
             scrollTop: scrollPoint
@@ -119,7 +161,7 @@ require(['app', 'jquery', 'hello', 'gridrotator'], function (app, $) {
         if (windscroll >= 100) {
             // $('nav').addClass('fixed');
             $('.container section').each(function(i) {
-                if ($(this).position().top <= windscroll + 61) {
+                if ($(this).position().top <= windscroll + 81) {
                     $('nav li.active').removeClass('active');
                     $('nav li').eq(i).addClass('active');
                 }
@@ -133,5 +175,11 @@ require(['app', 'jquery', 'hello', 'gridrotator'], function (app, $) {
         }
 
     }).scroll();
+
+    // Setup waypoints
+
+    $('section').each(function(index, el) {
+        console.log(el)
+    });
 
 });
