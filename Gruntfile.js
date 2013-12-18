@@ -276,6 +276,7 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
+                    removeComments: true
                     /*removeCommentsFromCDATA: true,
                     // https://github.com/yeoman/grunt-usemin/issues/44
                     //collapseWhitespace: true,
@@ -387,6 +388,7 @@ module.exports = function (grunt) {
         'autoprefixer',
         'requirejs',
         'concat',
+        'htmlmin',
         'cssmin',
         'uglify',
         'modernizr',

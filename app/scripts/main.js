@@ -81,8 +81,8 @@ require.config({
         }
     }
 });
-var map;
-require(['app', 'jquery', 'gridrotator', 'jquery-waypoints', 'skrollr'], function (app, $) {
+// var map;
+require(['app', 'jquery', 'gridrotator', 'jquery-waypoints', 'skrollr', 'bootstrapCollapse'], function (app, $) {
     'use strict';
     
     // var s = skrollr.init();
@@ -153,7 +153,7 @@ require(['app', 'jquery', 'gridrotator', 'jquery-waypoints', 'skrollr'], functio
 
         return false;
 
-    })
+    });
 
 
     $(window).scroll(function() {
@@ -175,11 +175,5 @@ require(['app', 'jquery', 'gridrotator', 'jquery-waypoints', 'skrollr'], functio
         }
 
     }).scroll();
-
-    // Setup waypoints
-
-    $('section').each(function(index, el) {
-        console.log(el)
-    });
 
 });
